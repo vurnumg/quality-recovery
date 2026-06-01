@@ -1,0 +1,53 @@
+name: Weekly Quality Recovery Review
+
+on:
+  schedule:
+    # Runs every Saturday at 08:00 UTC.
+    # This is 09:00 UK time during BST.
+    - cron: "0 8 * * 6"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-weekly-quality-recovery:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run weekly Quality Recovery review
+        run: python quality_recovery_weekly.py
+
+      - name: Commit updated Quality Recovery portfolio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add portfolio_quality_recovery.csv quality_recovery_weekly_email.html quality_recovery_*.csv
+          git diff --cached --quiet || git commit -m "Update Quality Recovery weekly review"
+          git push
+
+      - name: Send email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.MAIL_SERVER }}
+          server_port: ${{ secrets.MAIL_PORT }}
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "Weekly Quality Recovery Review"
+          to: ${{ secrets.MAIL_TO }}
+          from: ${{ secrets.MAIL_FROM }}
+          body: "Your email client does not support HTML."
+          html_body: file://quality_recovery_weekly_email.html
