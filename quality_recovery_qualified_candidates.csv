@@ -1,0 +1,2 @@
+Ticker,Company,Sector,Price,50DMA,200DMA,52w High,Pullback %,Distance Above 200DMA %,50DMA Above 200DMA %,Trend OK,Pullback OK,Qualifies,Pullback Rank,Trend Strength Rank,Combined Rank Score,Rank
+EMR,Emerson Electric,Industrials,141.1649932861328,137.17297393798827,136.36225746154784,160.4226837158203,-12.004343764627079,3.522041886068994,0.5945314279275804,True,True,True,1.0,1.0,2.0,1
