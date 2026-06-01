@@ -1,2 +1,2 @@
-# quality_recovery
+# quality-recovery
 Quality Recovery
