@@ -1,2 +1,2 @@
 Ticker,Company,Sector,EntryDate,EntryPrice,CurrentPrice,ReturnPct,TradingDaysHeld,CalendarDaysHeld,Action
-EMR,Emerson Electric,Industrials,2026-06-06,138.83,150.66000366210938,0.08521215632146761,9,14,HOLD
+EMR,Emerson Electric,Industrials,2026-06-06,138.83,143.49000549316406,0.03356627164996073,14,21,HOLD

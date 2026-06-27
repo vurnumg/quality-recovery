@@ -1,1 +1,2 @@
-Ticker,Company,Sector,Price,50DMA,200DMA,52w High,Pullback %,Distance Above 200DMA %,50DMA Above 200DMA %,Trend OK,Pullback OK,Qualifies
+Ticker,Company,Sector,Price,50DMA,200DMA,52w High,Pullback %,Distance Above 200DMA %,50DMA Above 200DMA %,Trend OK,Pullback OK,Qualifies,Pullback Rank,Trend Strength Rank,Combined Rank Score,Rank
+ODFL,Old Dominion Freight Line,Industrials,218.7899932861328,217.89361572265625,177.78773094177245,248.72999572753906,-12.037149903786748,23.06248137999414,22.558297228068525,True,True,True,1.0,1.0,2.0,1
