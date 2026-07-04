@@ -1,2 +1,3 @@
 Ticker,Company,Sector,EntryDate,EntryPrice,CurrentPrice,ReturnPct,TradingDaysHeld,CalendarDaysHeld,Action
-EMR,Emerson Electric,Industrials,2026-06-06,138.83,143.49000549316406,0.03356627164996073,14,21,HOLD
+EMR,Emerson Electric,Industrials,2026-06-06,138.83,139.0500030517578,0.0015846938828625312,18,28,HOLD
+ODFL,Old Dominion Freight Line,Industrials,2026-06-27,218.7899932861328,217.64999389648438,-0.005210473168933083,4,7,HOLD
