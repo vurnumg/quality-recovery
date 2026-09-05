@@ -1,2 +1,4 @@
 Ticker,Company,Sector,EntryDate,EntryPrice,CurrentPrice,ReturnPct,TradingDaysHeld,CalendarDaysHeld,Action
-ODFL,Old Dominion Freight Line,Industrials,2026-06-27,220.77,200.05999755859375,-0.09380804657066744,43,63,HOLD
+ODFL,Old Dominion Freight Line,Industrials,2026-06-27,220.77,185.8699951171875,-0.15808309499847129,49,70,HOLD
+FDS,FactSet,Financial Infrastructure,2026-08-29,304.4700012207031,301.9599914550781,-0.00824386558794521,5,7,HOLD
+ROK,Rockwell Automation,Industrials,2026-08-29,433.0,433.80999755859375,0.0018706641076067232,5,7,HOLD
